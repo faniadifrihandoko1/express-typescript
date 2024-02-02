@@ -1,0 +1,808 @@
+2024-02-02 16:34:12 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:34:17 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/jwt.ts[0m:[93m27[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType 'string | JwtPayload' is not assignable to type 'string'.
+  Type 'JwtPayload' is not assignable to type 'string'.
+
+[7m27[0m     return jsonWebToken.verify(token, String(process.env.JWT_REFRESH_SCREET))
+[7m  [0m [91m    ~~~~~~[0m
+[96msrc/utils/jwt.ts[0m:[93m29[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m29[0m     return null
+[7m  [0m [91m    ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/jwt.ts[0m:[93m27[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType 'string | JwtPayload' is not assignable to type 'string'.
+  Type 'JwtPayload' is not assignable to type 'string'.
+
+[7m27[0m     return jsonWebToken.verify(token, String(process.env.JWT_REFRESH_SCREET))
+[7m  [0m [91m    ~~~~~~[0m
+[96msrc/utils/jwt.ts[0m:[93m29[0m:[93m5[0m - [91merror[0m[90m TS2322: [0mType 'null' is not assignable to type 'string'.
+
+[7m29[0m     return null
+[7m  [0m [91m    ~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:34:59 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:35:47 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:36:19 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: any; nama: any; role: any; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: any; nama: any; role: any; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:37:26 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m76[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m76[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m76[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m76[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:38:03 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/barang.service.ts[0m:[93m6[0m:[93m3[0m - [91merror[0m[90m TS2322: [0mType '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }[]' is not assignable to type 'barangType[]'.
+  Type '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }' is not assignable to type 'barangType'.
+    Types of property 'harga' are incompatible.
+      Type 'Decimal' is not assignable to type 'number'.
+
+[7m6[0m   return data
+[7m [0m [91m  ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/barang.service.ts[0m:[93m6[0m:[93m3[0m - [91merror[0m[90m TS2322: [0mType '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }[]' is not assignable to type 'barangType[]'.
+  Type '{ id: number; nama: string; jumlah: number; harga: Decimal; created_at: Date; updated_at: Date; }' is not assignable to type 'barangType'.
+    Types of property 'harga' are incompatible.
+      Type 'Decimal' is not assignable to type 'number'.
+
+[7m6[0m   return data
+[7m [0m [91m  ~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:38:11 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m76[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m76[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m76[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m76[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:39:02 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m76[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m76[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/controllers/user.controller.ts[0m:[93m76[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'UserType'.
+
+[7m76[0m       id: user.id,
+[7m  [0m [91m               ~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m82[0m:[93m39[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+  Type '{ id: any; email: string; nama: string; role: string; }' is missing the following properties from type 'UserType': user_id, password
+
+[7m82[0m     const token = generateAccessToken(dataUser)
+[7m  [0m [91m                                      ~~~~~~~~[0m
+[96msrc/controllers/user.controller.ts[0m:[93m83[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ id: any; email: string; nama: string; role: string; }' is not assignable to parameter of type 'UserType'.
+
+[7m83[0m     const refreshToken = generateRefreshToken(dataUser)
+[7m  [0m [91m                                              ~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:39:22 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:39:46 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:39:58 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:40:50 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:41:10 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:42:14 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:42:16 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:42:41 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:43:45 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:44:43 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/barang.route.ts[0m:[93m15[0m:[93m64[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m15[0m barangRoute.get('/barang', authentication, expressAsyncHandler(getAllBarang))
+[7m  [0m [91m                                                               ~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m19[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m19[0m   expressAsyncHandler(getDataBarangById)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/barang.route.ts[0m:[93m15[0m:[93m64[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m15[0m barangRoute.get('/barang', authentication, expressAsyncHandler(getAllBarang))
+[7m  [0m [91m                                                               ~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m19[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m19[0m   expressAsyncHandler(getDataBarangById)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:45:41 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/barang.route.ts[0m:[93m15[0m:[93m64[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m15[0m barangRoute.get('/barang', authentication, expressAsyncHandler(getAllBarang))
+[7m  [0m [91m                                                               ~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m19[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m19[0m   expressAsyncHandler(getDataBarangById)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m24[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m24[0m   expressAsyncHandler(insertDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m29[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m29[0m   expressAsyncHandler(updateDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/barang.route.ts[0m:[93m15[0m:[93m64[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m15[0m barangRoute.get('/barang', authentication, expressAsyncHandler(getAllBarang))
+[7m  [0m [91m                                                               ~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m19[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m19[0m   expressAsyncHandler(getDataBarangById)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m24[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m24[0m   expressAsyncHandler(insertDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+[96msrc/routes/barang.route.ts[0m:[93m29[0m:[93m23[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m29[0m   expressAsyncHandler(updateDataBarang)
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:46:51 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+2024-02-02 16:47:01 [LOGGER] error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/user.route.ts[0m:[93m7[0m:[93m50[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+
+[7m7[0m userRouter.post('/register', expressAsyncHandler(registerUser))
+[7m [0m [91m                                                 ~~~~~~~~~~~~[0m
+[96msrc/routes/user.route.ts[0m:[93m8[0m:[93m47[0m - [91merror[0m[90m TS2345: [0mArgument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+
+[7m8[0m userRouter.post('/login', expressAsyncHandler(loginUser))
+[7m [0m [91m                                              ~~~~~~~~~[0m
+
+    at createTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\WR18\Documents\Belajar Fullstack\express-typescript\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
